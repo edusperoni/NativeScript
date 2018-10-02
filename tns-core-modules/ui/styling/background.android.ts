@@ -66,6 +66,7 @@ export module ad {
                 backgroundDrawable = new org.nativescript.widgets.BorderDrawable(layout.getDisplayDensity(), view.toString());
                 refreshBorderDrawable(view, backgroundDrawable);
                 nativeView.setBackground(backgroundDrawable);
+                androidView._cachedDrawable = undefined;
             } else {
                 refreshBorderDrawable(view, backgroundDrawable);
             }
